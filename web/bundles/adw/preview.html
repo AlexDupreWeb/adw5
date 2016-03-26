@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="img/favicon.png">
+
+	<title>TEST</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/ie10-viewport-bug-workaround.css">
+	
+	<link rel="stylesheet" href="css/adw.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body role="document">
+
+<div class="top-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="contact-list">
+                    <li>
+                        <a href="#">Accessibilité</a>
+                    </li>
+                    <li>
+                        <a href="#">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#">Contenu</a>
+                    </li>
+                    <li>
+                        <a href="#">Plan du site</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="social-list">
+                    <li>
+                        <a href="#" title="" data-placement="bottom" class="facebook itl-tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="" data-placement="bottom" class="twitter itl-tooltip" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="" data-placement="bottom" class="google itl-tooltip" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="" data-placement="bottom" class="dribbble itl-tooltip" data-original-title="Dribble"><i class="fa fa-dribbble"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="" data-placement="bottom" class="linkdin itl-tooltip" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="" data-placement="bottom" class="flickr itl-tooltip" data-original-title="Flickr"><i class="fa fa-flickr"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="" data-placement="bottom" class="tumblr itl-tooltip" data-original-title="Tumblr"><i class="fa fa-tumblr"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="" data-placement="bottom" class="instgram itl-tooltip" data-original-title="Instagram"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="" data-placement="bottom" class="vimeo itl-tooltip" data-original-title="vimeo"><i class="fa fa-vimeo-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="" data-placement="bottom" class="skype itl-tooltip" data-original-title="Skype"><i class="fa fa-skype"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <div class="container">
+        <a href="index.html">
+            <img height="75" src="data:image/png;base64,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">
+        </a>
+    </div>
+</div>
+
+<!-- Fixed navbar -->
+<div id="menu" class="affix-top">
+    <nav class="navbar navbar-inverse"><!--navbar-fixed-top-->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Afficher le menu</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+</div>
+
+<div class="container theme-showcase" role="main">
+
+    <div class="page-header">
+        <h1>Jumbotron</h1>
+    </div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <h1>Theme example</h1>
+        <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
+    </div>
+
+    <div class="page-header">
+        <h1>Typo</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h1>h1. Bootstrap heading</h1>
+            <h2>h2. Bootstrap heading</h2>
+            <h3>h3. Bootstrap heading</h3>
+            <h4>h4. Bootstrap heading</h4>
+            <h5>h5. Bootstrap heading</h5>
+            <h6>h6. Bootstrap heading</h6>
+        </div>
+        <div class="col-md-6">
+            <p class="lead">Texte mis en avant</p>
+            <hr>
+            <p class="museo">Police museo</p>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="text-primary">text-primary</p>
+                    <p class="text-info">text-info</p>
+                    <p class="text-success">text-success</p>
+                    <p class="text-warning">text-warning</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-danger">text-danger</p>
+                    <p class="text-teal">text-teal</p>
+                    <p class="text-purple">text-purple</p>
+                    <p class="text-orange">text-orange</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-black">text-black</p>
+                    <p class="text-gray">text-gray</p>
+                    <p class="text-muted">text-muted</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>Citation</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <small>
+                    Someone famous in
+                    <cite title="Source Title">Source Title</cite>
+                </small>
+            </blockquote>
+        </div>
+        <div class="col-md-6">
+            <blockquote class="pull-right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <small>
+                    Someone famous in
+                    <cite title="Source Title">Source Title</cite>
+                </small>
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <blockquote class="doublequote">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            </blockquote>
+        </div>
+        <div class="col-md-6">
+            <blockquote class="doublequote-right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            </blockquote>
+        </div>
+    </div>
+
+
+
+
+    <div class="page-header">
+        <h1>Buttons</h1>
+    </div>
+    <table class="table table-bordered text-center">
+        <thead>
+        <tr>
+            <th>Normal</th>
+            <th>Large <code>.btn-lg</code></th>
+            <th>Small <code>.btn-sm</code></th>
+            <th>X-Small <code>.btn-xs</code></th>
+            <th>Flat <code>.btn-flat</code></th>
+            <th>Disabled <code>.disabled</code></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><button type="button" class="btn btn-block btn-default">Default</button></td>
+            <td><button type="button" class="btn btn-block btn-lg btn-default">Default</button></td>
+            <td><button type="button" class="btn btn-block btn-sm btn-default">Default</button></td>
+            <td><button type="button" class="btn btn-block btn-xs btn-default">Default</button></td>
+            <td><button type="button" class="btn btn-block btn-flat btn-default">Default</button></td>
+            <td><button type="button" class="btn btn-block disabled btn-default">Default</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-block btn-primary">Primary</button></td>
+            <td><button type="button" class="btn btn-block btn-lg btn-primary">Primary</button></td>
+            <td><button type="button" class="btn btn-block btn-sm btn-primary">Primary</button></td>
+            <td><button type="button" class="btn btn-block btn-xs btn-primary">Primary</button></td>
+            <td><button type="button" class="btn btn-block btn-flat btn-primary">Primary</button></td>
+            <td><button type="button" class="btn btn-block disabled btn-primary">Primary</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-block btn-success">Success</button></td>
+            <td><button type="button" class="btn btn-block btn-lg btn-success">Success</button></td>
+            <td><button type="button" class="btn btn-block btn-sm btn-success">Success</button></td>
+            <td><button type="button" class="btn btn-block btn-xs btn-success">Success</button></td>
+            <td><button type="button" class="btn btn-block btn-flat btn-success">Success</button></td>
+            <td><button type="button" class="btn btn-block disabled btn-success">Success</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-block btn-info">Info</button></td>
+            <td><button type="button" class="btn btn-block btn-lg btn-info">Info</button></td>
+            <td><button type="button" class="btn btn-block btn-sm btn-info">Info</button></td>
+            <td><button type="button" class="btn btn-block btn-xs btn-info">Info</button></td>
+            <td><button type="button" class="btn btn-block btn-flat btn-info">Info</button></td>
+            <td><button type="button" class="btn btn-block disabled btn-info">Info</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-block btn-danger">Danger</button></td>
+            <td><button type="button" class="btn btn-block btn-lg btn-danger">Danger</button></td>
+            <td><button type="button" class="btn btn-block btn-sm btn-danger">Danger</button></td>
+            <td><button type="button" class="btn btn-block btn-xs btn-danger">Danger</button></td>
+            <td><button type="button" class="btn btn-block btn-flat btn-danger">Danger</button></td>
+            <td><button type="button" class="btn btn-block disabled btn-danger">Danger</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-block btn-warning">Warning</button></td>
+            <td><button type="button" class="btn btn-block btn-lg btn-warning">Warning</button></td>
+            <td><button type="button" class="btn btn-block btn-sm btn-warning">Warning</button></td>
+            <td><button type="button" class="btn btn-block btn-xs btn-warning">Warning</button></td>
+            <td><button type="button" class="btn btn-block btn-flat btn-warning">Warning</button></td>
+            <td><button type="button" class="btn btn-block disabled btn-warning">Warning</button></td>
+        </tr>
+        <tr>
+            <td colspan="6"><hr></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-block bg-orange">Orange</button></td>
+            <td><button type="button" class="btn btn-block bg-teal">Teal</button></td>
+            <td><button type="button" class="btn btn-block bg-purple">Purple</button></td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <div class="page-header">
+        <h1>Tables</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@TwBootstrap</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <table class="table table-condensed">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h1>Thumbnails</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <img class="img-thumbnail" alt="test" src="img/img1_200x200.jpg">
+        </div>
+        <div class="col-md-3">
+            <img class="img-thumbnail img-rounded" alt="test" src="img/img2_200x200.jpg">
+        </div>
+        <div class="col-md-3">
+            <img class="img-thumbnail img-circle" alt="test" src="img/img3_200x200.jpg">
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="page-header">
+        <h1>Labels</h1>
+    </div>
+    <h1>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+    </h1>
+    <h2>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+    </h2>
+    <h3>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+    </h3>
+    <h4>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+    </h4>
+    <h5>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+    </h5>
+    <h6>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+    </h6>
+    <p>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+    </p>
+
+
+    <div class="page-header">
+        <h1>Badges</h1>
+    </div>
+    <p>
+        <a href="#">Inbox <span class="badge">42</span></a>
+    </p>
+    <br>
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+    </ul>
+
+
+    <div class="page-header">
+        <h1>Dropdown menus</h1>
+    </div>
+    <div class="dropdown theme-dropdown clearfix">
+        <a id="dropdownMenu1" href="#" class="sr-only dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li class="active"><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+
+
+    <div class="page-header">
+        <h1>Navs</h1>
+    </div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+
+    <br>
+
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+
+
+    <div class="page-header">
+        <h1>Navbars</h1>
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+
+    <div class="page-header">
+        <h1>Alerts</h1>
+    </div>
+    <div class="alert alert-success" role="alert">
+        <strong>Well done!</strong> You successfully read this important alert message.
+    </div>
+    <div class="alert alert-info" role="alert">
+        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+    </div>
+    <div class="alert alert-warning" role="alert">
+        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+    </div>
+    <div class="alert alert-danger" role="alert">
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+    </div>
+
+
+    <div class="page-header">
+        <h1>Progress bars</h1>
+    </div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete (danger)</span></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete</span></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
+        <div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
+        <div class="progress-bar progress-bar-danger" style="width: 10%"><span class='sr-only'>10% Complete (danger)</span></div>
+    </div>
+
+
+    <div class="page-header">
+        <h1>List groups</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <ul class="list-group">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+            <div class="list-group">
+                <a href="#" class="list-group-item active">
+                    Cras justo odio
+                </a>
+                <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item">Vestibulum at eros</a>
+            </div>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+            <div class="list-group">
+                <a href="#" class="list-group-item active">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                </a>
+            </div>
+        </div><!-- /.col-sm-4 -->
+    </div>
+
+
+    <div class="page-header">
+        <h1>Panels</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panel title</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panel title</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panel title</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panel title</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panel title</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+            <div class="panel panel-danger">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panel title</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
+        </div><!-- /.col-sm-4 -->
+    </div>
+
+
+    <div class="page-header">
+        <h1>Wells</h1>
+    </div>
+    <div class="well">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+    </div>
+
+
+    <div class="page-header">
+        <h1>Carousel</h1>
+    </div>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/img1.jpg" alt="First slide">
+            </div>
+            <div class="item">
+                <img src="img/img3.jpg" alt="Second slide">
+            </div>
+            <div class="item">
+                <img src="img/img2.jpg" alt="Third slide">
+            </div>
+            <div class="item">
+                <img src="img/img4.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div> <!-- /container -->
+
+<br><br>
+
+<footer>
+    <div class="container">
+        <div class="row" id="footer-section">
+            <div class="col-md-3">
+                <div class="footer-widget">
+                    <p class="footer-title">
+                        <i class="fa fa-share-alt"></i> Me suivre<span class="head-line"></span>
+                    </p>
+                    <ul class="footer-social">
+                        <li>
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="dribbble"><i class="fa fa-dribbble"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="linkdin"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="flickr"><i class="fa fa-flickr"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="tumblr"><i class="fa fa-tumblr"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="instgram"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="vimeo"><i class="fa fa-vimeo-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="skype"><i class="fa fa-skype"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="footer-widget">
+                    <p class="footer-title">
+                        <i class="fa fa-instagram"></i> Test<span class="head-line"></span>
+                    </p>
+                    <ul class="footer-picture">
+                        <li>
+                            <a class="lightbox" href="img/img_72x65.jpg">
+                                <img src="img/img_72x65.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lightbox" href="img/img_72x65.jpg">
+                                <img src="img/img_72x65.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lightbox" href="img/img_72x65.jpg">
+                                <img src="img/img_72x65.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lightbox" href="img/img_72x65.jpg">
+                                <img src="img/img_72x65.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lightbox" href="img/img_72x65.jpg">
+                                <img src="img/img_72x65.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lightbox" href="img/img_72x65.jpg">
+                                <img src="img/img_72x65.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lightbox" href="img/img_72x65.jpg">
+                                <img src="img/img_72x65.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lightbox" href="img/img_72x65.jpg">
+                                <img src="img/img_72x65.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lightbox" href="img/img_72x65.jpg">
+                                <img src="img/img_72x65.jpg" alt="">
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="footer-widget">
+                    <p class="footer-title">
+                        <i class="fa fa-twitter"></i> Twitter<span class="head-line"></span>
+                    </p>
+                    <ul class="footer-twitter">
+                        <li>
+                            <p><a href="#">@GrayGrids </a> Lorem ipsum dolor et, consectetur adipiscing eli.</p>
+                            <span>28 February 2014</span>
+                        </li>
+                        <li>
+                            <p><a href="#">@GrayGrids </a> Lorem ipsum dolor et, consectetur adipiscing eli.An Fusce eleifend aliquet nis application.</p>
+                            <span>26 February 2014</span>
+                        </li>
+                        <li>
+                            <p><a href="#">@GrayGrids </a> Lorem ipsum dolor et, consectetur adipiscing eli.</p>
+                            <span>28 February 2014</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="footer-widget">
+                    <p class="footer-title">A propos<span class="head-line"></span></p>
+                    <p><img alt="Footer Logo" class="img-responsive" src="images/footer-margo.png"></p>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    <ul>
+                        <li><span>Phone Number:</span> +01 234 567 890</li>
+                        <li><span>Email:</span> company@company.com</li>
+                        <li><span>Website:</span> www.yourdomain.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="copyright-section" class="row">
+            <div class="col-md-6">
+                <div class="footer-copyright">
+                    <p>
+                        &copy; 2014 Margo - All Rights Reserved
+                        <a href="http://graygrids.com">GrayGrids</a>
+                    </p>
+                </div>
+            </div>
+            <div cass="cold-md-6">
+                <div class="footer-nav">
+                    <ul class="footer-nav">
+                        <li><a href="#">Plan du site</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Accessibilité</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-2.2.1.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script>
+	$('#menu').affix({
+		offset: {
+			//top: 33
+          top: 155
+		}
+	});
+	</script>
+</body>
+</html>
