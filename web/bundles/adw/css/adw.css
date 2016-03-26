@@ -38,6 +38,7 @@
  * **************************************** */
 
 body{
+	color: #333;
 	font-family: "Open Sans",sans-serif;
 	font-size: 13px;
 	font-weight: 300;
@@ -54,9 +55,26 @@ h2,h4,h6{
 	font-family: "Museo300", serif;
 }
 
+a{
+	color: #ffa500;
+}
+a:hover,a:focus{
+	color: #404040;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
 /* **************************************** *
  * 3 - Style adw
  * **************************************** */
+
+.display-inline{ display: inline; }
+.display-block{ display: block; }
+.display-inlineblock{ display: inline-block; }
+.display-none{ display: none; }
+
 .lead{ font-size: 21px; }
 .museo{ font-family: "Museo300", serif; }
 
@@ -71,6 +89,9 @@ h2,h4,h6{
 .text-gray, .text-muted{ color: #777777; }
 .text-black{ color: #111111; }
 
+.img-thumbnail{
+	padding: 7px;
+}
 
 .jumbotron,
 .container .jumbotron{
@@ -268,6 +289,21 @@ h4 .label,h5 .label,h6 .label{
 
 
 
+
+
+
+
+blockquote{
+	border-left: 5px solid #ffa500;
+	font-style:normal;
+	font-family: "Museo500", Serif;
+}
+.blockquote-reverse, blockquote.pull-right{
+	border-right: 5px solid #ffa500;
+}
+blockquote .small, blockquote footer, blockquote small{
+	color: #ffa500;
+}
 blockquote.doublequote {
 	border: 0;
 	font-style:normal;
@@ -286,7 +322,6 @@ blockquote.doublequote p::before{
 	position: absolute;
 	width: 50px;
 }
-
 blockquote.doublequote-right {
 	border: 0;
 	font-family: "Museo500", Serif;
@@ -310,6 +345,88 @@ blockquote.doublequote-right p::after{
 	right: 25px;
 	width: 50px;
 }
+
+
+
+.nav > li > a:focus,
+.nav > li > a:hover{
+	color: #333;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+	background-color: #ffa500;
+	color: #fff;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover{
+	background-color: #ffa500;
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover{
+	background-color: #eee;
+}
+
+.badge{
+	background-color: #333;
+}
+.list-group-item.active > .badge,
+.nav-pills > .active > a > .badge {
+	background-color: #333;
+	color: #fff;
+}
+
+.navbar .navbar-header .navbar-brand{
+	font-family: "Museo300", serif;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover{
+	background-color: #eee;
+	color: #333;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover{
+	background-color: #ffa500;
+}
+
+.navbar-inverse{
+	border: none;
+}
+
+a.list-group-item,
+button.list-group-item{
+	color: #333;
+}
+a.list-group-item:focus,
+a.list-group-item:hover,
+button.list-group-item:focus,
+button.list-group-item:hover{
+	background-color: #eee;
+}
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover{
+	background-color: #ffa500;
+	border: 1px solid #ed9900;
+	color: #fff;
+}
+.list-group-item.active .list-group-item-text,
+.list-group-item.active:focus .list-group-item-text,
+.list-group-item.active:hover .list-group-item-text{
+	color: #fff;
+}
+
+.well{
+	box-shadow: none;
+	font-family: "Museo300", serif;
+}
+
 
 /* **************************************** *
  *
@@ -469,25 +586,26 @@ ul.social-list li:last-child a i {
     top: 0;
     z-index: 1030;
 }
-
 #menu .navbar{
 	border: none;
 	border-radius: 0;
 }
-
 #menu .navbar .navbar-header .navbar-toggle{
 	color: #fff;
 	font-size: 20px;
 	padding: 2px 7px;
 	text-align: center;
 }
-
 #menu .navbar ul li:hover{
 	color: #fff;
 	background: #ffa500;
 }
-
-
+#menu .navbar ul li a{
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: color 0 ease-in;
+}
 
 /*********************/
 footer{

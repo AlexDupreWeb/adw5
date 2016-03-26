@@ -125,6 +125,17 @@
     </div>
 
     <div class="page-header">
+        <h1>Text</h1>
+    </div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus libero ut dolor facilisis, ac tempus ipsum tempus. Vestibulum lorem dui, fringilla eget tincidunt ac, tincidunt imperdiet diam. Curabitur augue purus, viverra et sapien at, laoreet auctor orci. Duis nec enim vel lacus suscipit lobortis non sit amet dui. Nunc vel risus vitae turpis porttitor fermentum. Vestibulum quis tortor id orci viverra consequat et vitae lectus. Praesent imperdiet sapien arcu, dictum elementum sem mollis ac. Donec non lorem vitae risus dictum tempus. Suspendisse et volutpat ipsum. Maecenas congue consectetur condimentum. </p>
+        <p>
+            <a href="#">Link example</a>
+        </p>
+    </div>
+
+    <div class="page-header">
         <h1>Typo</h1>
     </div>
     <div class="row">
@@ -429,11 +440,10 @@
             <img class="img-thumbnail" alt="test" src="{{ asset('bundles/adw/img/img1_200x200.jpg') }}">
         </div>
         <div class="col-md-3">
-            <img class="img-thumbnail img-rounded" alt="test" src="{{ asset('bundles/adw/img/img2_200x200.jpg') }}">
-        </div>
-        <div class="col-md-3">
             <img class="img-thumbnail img-circle" alt="test" src="{{ asset('bundles/adw/img/img3_200x200.jpg') }}">
         </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
     </div>
 
 
@@ -501,27 +511,31 @@
         <span class="label label-danger">Danger</span>
     </p>
 
-
     <div class="page-header">
-        <h1>Badges</h1>
+        <h1>Navs</h1>
     </div>
-    <p>
-        <a href="#">Inbox <span class="badge">42</span></a>
-    </p>
-    <br>
-    <ul class="nav nav-pills" role="tablist">
-        <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
-        <li role="presentation"><a href="#">Profile</a></li>
-        <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
-    </ul>
-
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="nav nav-pills" role="tablist">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+        </div>
+    </div>
 
     <div class="page-header">
         <h1>Dropdown menus</h1>
     </div>
     <div class="dropdown theme-dropdown clearfix">
-        <a id="dropdownMenu1" href="#" class="sr-only dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="display: block; position: static; margin-bottom: 15px;">
             <li class="active"><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
             <li><a href="#">Something else here</a></li>
@@ -530,24 +544,23 @@
         </ul>
     </div>
 
-
     <div class="page-header">
-        <h1>Navs</h1>
+        <h1>Badges</h1>
     </div>
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#">Home</a></li>
-        <li role="presentation"><a href="#">Profile</a></li>
-        <li role="presentation"><a href="#">Messages</a></li>
-    </ul>
-
-    <br>
-
-    <ul class="nav nav-pills" role="tablist">
-        <li role="presentation" class="active"><a href="#">Home</a></li>
-        <li role="presentation"><a href="#">Profile</a></li>
-        <li role="presentation"><a href="#">Messages</a></li>
-    </ul>
-
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                <a href="#">Inbox <span class="badge">42</span></a>
+            </p>
+        </div>
+        <div class="col-md-6">
+            <ul class="nav nav-pills" role="tablist">
+                <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+            </ul>
+        </div>
+    </div>
 
     <div class="page-header">
         <h1>Navbars</h1>
