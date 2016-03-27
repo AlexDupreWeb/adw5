@@ -1,6 +1,0 @@
-adw_homepage:
-    path:     /
-    defaults: { _controller: AdwBundle:Default:index }
-adw_preview:
-    path:     /preview
-    defaults: { _controller: AdwBundle:Default:preview }

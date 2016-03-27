@@ -1,7 +1,3 @@
-adw:
-    resource: "@AdwBundle/Resources/config/routing.yml"
-    prefix:   /
-
 home:
     path:      /
     defaults:  { _controller: AppBundle:Default:index }
