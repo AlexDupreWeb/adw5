@@ -93,6 +93,11 @@ a:hover,a:focus{
 	padding: 7px;
 }
 
+.breadcrumb{
+	background: none;
+	padding: 0;
+}
+
 .jumbotron,
 .container .jumbotron{
 	background-color: #2b2b2b;

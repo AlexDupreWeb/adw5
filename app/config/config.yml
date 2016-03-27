@@ -38,6 +38,9 @@ twig:
 # Doctrine Configuration
 doctrine:
     dbal:
+        default_table_options:
+            charset: utf8
+            collate: utf8_general_ci
         driver:   pdo_mysql
         host:     "%database_host%"
         port:     "%database_port%"
