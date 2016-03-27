@@ -1,0 +1,4 @@
+services:
+#    adw.example:
+#        class: Adw\Bundle\AdwBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
